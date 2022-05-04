@@ -1,0 +1,117 @@
+* {
+   font-family: 'Krub';
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: url("./assets/images/space.jpg") center;
+    background-size: contain;
+    overflow: hidden;
+}
+
+img {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    perspective: 90rem;
+    perspective-origin: 30% 60%;
+}
+
+.div-transform {
+    display: flex;
+    transform: rotateX(20deg) rotateZ(-5deg) scale3d(1,1,-0.9) scale(1.1) translateX(50px);
+}
+
+.card {
+    color: white;
+    border-radius: 8px;
+    padding: 0px 18px;
+    width: 244px;
+    transition: 0.5s ease;
+    overflow: hidden;
+    transform: translate(0);
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+}
+
+.card h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card h4 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 48px;
+}
+
+.card-1 {
+    background: url(./assets/images/darth.jpg) center;
+    background-size: cover;
+    transform: scale(1.02);
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.card-1:hover {
+    transform: scale(1.11);
+    box-shadow: -7px 4px 28px -3px #6b6b6b;
+}
+
+.card-1::before {
+    background: linear-gradient(90deg, #4b4848 0%, #131212 100%);
+}
+
+.card-2 {
+    background: url(./assets/images/leia.jpg) center;
+    background-size: cover;
+    transform: scale(1.01);
+    margin-right: 31px;
+    cursor: pointer;
+}
+
+.card-2:hover {
+    transform: scale(1.1);
+    box-shadow: -7px 4px 28px -3px #3bd9d9;
+}
+
+.card-2::before {
+    background: linear-gradient(90deg, #13a7a7 0%, #5619b1 100%);
+}
+
+.card-3 {
+    background: url(./assets/images/chew.png) center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.card-3:hover {
+    transform: scale(1.08);
+    box-shadow: -7px 4px 28px -3px #503918;
+}
+
+.card-3::before {
+    background: linear-gradient(90deg, #3b1d01 0%, #491d00 100%);
+}
