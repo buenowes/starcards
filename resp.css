@@ -1,0 +1,39 @@
+@media screen and (max-width:700px) {
+    .div-transform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+    overflow: hidden;
+    }
+    .card-1, .card-2, .card-3 {
+        margin-bottom: 50px;
+        width: 150px;
+        height: 150px;
+    }
+    .card h2 {
+        font-size: 12px;
+    }
+    .card h4 {
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+    .card p {
+        font-size: 9px;
+        margin-bottom: -30px;
+    }
+
+    img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    }
+}
